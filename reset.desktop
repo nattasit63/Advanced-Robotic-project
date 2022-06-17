@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=RESET app
+
+Exec=sh -c 'python3 $HOME/.pkg_reset/pkg_reset.py'
+Icon= ~/.pkg_reset/icon.svg
+
+Terminal=false
+Type=Application
