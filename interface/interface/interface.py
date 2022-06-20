@@ -1,3 +1,16 @@
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    This python file writed by Teetee Nattasit ,This code is about to do Fleet manager configuraton file
+    It's has GUI that's user able to select file of map and able to export configuaration file (node,node)
+
+
+    To use this code properly,You have to change screen width and height of pygame as same size as your input image file  (at line 148-149)
+
+
+    If you find out any problem ,Please contact me
+    My contact : nattasit.office@gmail.com
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 import pygame as pg
 from tkinter import *
 from tkinter import filedialog
@@ -18,8 +31,8 @@ class Select():
         # First screen
         self.root = Tk()
         self.root.title('GUI')
-        screen_width = 500
-        screen_height = 480
+        screen_width = 800
+        screen_height = 600
         self.my_menu = Menu()
         self.sub_menu = Menu()
         self.depot_txt = StringVar()
@@ -48,8 +61,8 @@ class Select():
 
 
     def openFile(self):
-        # home = os.getenv("HOME")
-        my_path_default = "/home/natta/adv_ws/src/interface/config"
+        my_path_default = "$HOME/adv_ws"
+        # my_path_default = "/home/natta/adv_ws/src/interface/config"
         root_filename = filedialog.askopenfilename(initialdir=my_path_default,title='Select .yaml file',filetypes=(("yaml file","*.yaml"),("all files","*.*")))
         print("Path to File : ",root_filename)
         tkinter.messagebox.showinfo('File path',root_filename )
