@@ -1,16 +1,3 @@
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    This python file writed by Teetee Nattasit ,This code is about to do Fleet manager configuraton file
-    It's has GUI that's user able to select file of map and able to export configuaration file (node,node)
-
-
-    To use this code properly,You have to change screen width and height of pygame as same size as your input image file  (at line 148-149)
-
-
-    If you find out any problem ,Please contact me
-    My contact : nattasit.office@gmail.com
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 import pygame as pg
 from tkinter import *
 from tkinter import filedialog
